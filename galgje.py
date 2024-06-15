@@ -179,6 +179,9 @@ def spel_zelf():
             break
 
         letter = input("kies één letter of kies ? als je denkt het woord te weten ")
+        if letter.lower() == "stop":
+            print("Ok. We stoppen het spel nu")
+            break
 
         # we hebben input van de speler, nu gaan we checken of de input valide is
         # is de input meer dan één letter dan geven we een foutmelding en beginnen we deze ronde opnieuw
