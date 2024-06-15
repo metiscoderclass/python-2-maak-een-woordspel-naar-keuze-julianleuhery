@@ -178,12 +178,15 @@ def spel_zelf():
             print("het woord was " + word)
             break
 
-        letter = input("kies één letter of kies ? als je denkt het woord te weten ")
+        letter = input("kies één letter of kies ? als je denkt het woord te weten.\nWil je stoppen, typ dan 'stop")
+
+        # we hebben input van de speler, nu gaan we checken of de input valide is
+
+        # is de input 'stop', stop dan
         if letter.lower() == "stop":
             print("Ok. We stoppen het spel nu")
             break
 
-        # we hebben input van de speler, nu gaan we checken of de input valide is
         # is de input meer dan één letter dan geven we een foutmelding en beginnen we deze ronde opnieuw
         if len(letter) > 1:
             bericht = "dat zijn er meer dan één! kies maar één letter"
